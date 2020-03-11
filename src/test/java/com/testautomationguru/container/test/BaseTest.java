@@ -22,9 +22,10 @@ public class BaseTest {
         if (System.getProperty("browser").equals("firefox"))
             dc = DesiredCapabilities.firefox();
 
-        String host = System.getProperty("seleniumHubHost");
+//         String host = System.getProperty("seleniumHubHost");
         
-        driver = new RemoteWebDriver(new URL("http://" + host + ":4444/wd/hub"), dc);
+//         driver = new RemoteWebDriver(new URL("http://" + host + ":4444/wd/hub"), dc);
+          driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
         
     }
 
