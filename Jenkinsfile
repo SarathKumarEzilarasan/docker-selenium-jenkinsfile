@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                       // vinsdocker/containertest => organization/application - it could be anything
-                      app = docker.build("vinsdocker/containertest")
+                      app = docker.build("sarathezil/vinsdocker")
                 }
             }
         }
